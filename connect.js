@@ -7,7 +7,7 @@ const s3 = new AWS.S3({
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
 })
 
-const filename = 'video/two-men-sit-on-the-top-of-a-mountain-as-a-helicopt-2022-08-04-13-32-51-utc.mov'
+const filename = 'test.mp4'
 
 const uploadFile = (fileName) => {
 

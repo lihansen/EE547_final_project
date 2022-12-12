@@ -1,0 +1,34 @@
+type Article {
+  articleId:  ID
+  title:      String
+  author:     User
+}
+
+type User {
+  userId:   ID
+  name:     String
+  follows:  [User]
+  articles: [Article]
+}
+
+type Query {
+  user(
+    userId:  ID!
+  ): User
+
+  users(
+    limit:  Int
+    offset: Int
+    sort:   String
+  ): [User!]
+
+  article(
+    articleId: ID!
+  ): Article
+
+  articles(
+    limit:  Int
+    offset: Int
+    sort:   String
+  ): [Article!]
+}

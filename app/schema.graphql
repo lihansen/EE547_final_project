@@ -1,0 +1,40 @@
+type Video {
+  articleId:  ID
+  title:      String
+  author:     User
+  likes:      Int
+  comments:   [Comments]
+}
+type comments {
+    user:      
+}
+
+
+type User {
+  userId:   ID
+  name:     String
+  follows:  [User]
+  videos: [Videos]
+}
+
+type Query {
+  user(
+    userId:  ID!
+  ): User
+
+  users(
+    limit:  Int
+    offset: Int
+    sort:   String
+  ): [User!]
+
+  article(
+    articleId: ID!
+  ): Article
+
+  articles(
+    limit:  Int
+    offset: Int
+    sort:   String
+  ): [Article!]
+}
