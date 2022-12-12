@@ -4,6 +4,9 @@ const { graphqlHTTP } = require('express-graphql');
 const mongoose = require('mongoose');
 const http = require('http')
 
+// import { makeExecutableSchema } from 'graphql-tools'
+// import { GraphQLUpload } from 'graphql-upload'
+
 const { ApolloServer, gql } = require('apollo-server-express');
 const {graphqlSchema} = require('./schema')
 
@@ -23,10 +26,6 @@ const mongo_url = 'mongodb://' + config_json.host + ':' + config_json.port;
 const connection = mongoose.connect(mongo_url, {
   autoIndex: true
 });
-
-
-
-
 
 const server = new ApolloServer({ schema: graphqlSchema })
 server.start().then(res => {

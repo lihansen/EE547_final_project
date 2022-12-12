@@ -9,9 +9,8 @@ const UserSchema = new mongoose.Schema({
   passward: String, 
   // videos: [VideoSchema],
   interests: [String], 
+  email: String,
 })
-
-
 
 
 const VideoSchema = new mongoose.Schema({
@@ -23,9 +22,8 @@ const VideoSchema = new mongoose.Schema({
     create_at: Date,
     tag: String,
     url: String,
+    
 });
-
-
 
 
 const CommentSchema = new mongoose.Schema({
@@ -74,16 +72,17 @@ function adminAccess(resolvers) {
 
 schemaComposer.Query.addFields({
     FindVideos: VideoTC.mongooseResolvers.findMany(),
-    // CommentsOfVideo: 
-    
+    // GetAllComments: 
+    // GetVideo
 });
 
 
 schemaComposer.Mutation.addFields({
     UploadVideo: VideoTC.mongooseResolvers.createOne(),
     // Login:
-    // Signup:
+    Signup:UserTC.mongooseResolvers.createOne(),
     // ChangeTag:
+    // ChangeInterest:
     // ChangeUserName:
     Comment: CommentTC.mongooseResolvers.createOne(),
     // Like: VideoTC
