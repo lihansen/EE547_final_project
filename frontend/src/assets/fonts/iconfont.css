@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2522582 */
+  src: url('//at.alicdn.com/t/font_2522582_u3ip0r6a9e.woff2?t=1621043172905') format('woff2'),
+       url('//at.alicdn.com/t/font_2522582_u3ip0r6a9e.woff?t=1621043172905') format('woff'),
+       url('//at.alicdn.com/t/font_2522582_u3ip0r6a9e.ttf?t=1621043172905') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* 心图标 */
+.icon-xin:before {
+  content: "\e75f";
+}
+/* 表情图标 */
+.icon-emoji:before {
+  content: "\e64a";
+}
+/* 关闭图标 */
+.icon-guanbi:before {
+  content: "\e61a";
+}
+/* 朋友图标 */
+.icon-pengyou:before {
+  content: "\e603";
+}
+/* 请求更新图标 */
+.icon-update:before {
+  content: "\e760";
+}
+/* 实心加图标 */
+.icon-jia2:before {
+  content: "\e70f";
+}
+/* 消息图标 */
+.icon-xiaoxi:before {
+  content: "\e764";
+}
+/* 面对面加朋友图标 */
+.icon-mianduimianjianqun:before {
+  content: "\e69c";
+}
+/* 右侧图标 */
+.icon-youce:before {
+  content: "\e616";
+}
+/* 直播图标 */
+.icon-zhibo:before {
+  content: "\e7d5";
+}
+/* 点赞图标 */
+.icon-dianzan:before {
+  content: "\e626";
+}
+/* 通知图标 */
+.icon-tongzhi:before {
+  content: "\e642";
+}
+/* 返回图标 */
+.icon-return2fanhuiyou:before {
+  content: "\e654";
+}
+/* 搜索图标 */
+.icon-icon_search:before {
+  content: "\e614";
+}
+/* 购物车图标 */
+.icon-gouwuche:before {
+  content: "\e610";
+}
+/* 圆环加图标 */
+.icon-jia:before {
+  content: "\e611";
+}
+/* 口令图标 */
+.icon-kouling:before {
+  content: "\e62a";
+}
+/* 二维码图标 */
+.icon-erweima:before {
+  content: "\e61e";
+}
+/* 通讯录图标 */
+.icon-tongxunlu:before {
+  content: "\e612";
+}
+/* 加图标 */
+.icon-jia1:before {
+  content: "\e613";
+}
+/* 粉丝图标 */
+.icon-fensi-01:before {
+  content: "\e615";
+}
+/* 人形图标 */
+.icon-ren:before {
+  content: "\e60e";
+}
+/* 互动图标 */
+.icon-biaoqiankuozhan_hudong-189:before {
+  content: "\eb37";
+}
+/* 扫一扫图标 */
+.icon-saoyisao:before {
+  content: "\e623";
+}
+/* 菜单右图标 */
+.icon-caidanyou:before {
+  content: "\e6c3";
+}
+/* 加密图标 */
+.icon-jiami:before {
+  content: "\f463";
+}

@@ -1,0 +1,61 @@
+const jwt = require('jsonwebtoken');
+const { models } = require('mongoose');
+const Token = {
+    encrypt: function (data, time) { 
+        return jwt.sign(data, 'token', { expiresIn: time })
+    },
+    decrypt: function (token) {
+        try {
+            let data = jwt.verify(token, 'token');
+            return {
+                token: true,
+                id: data.id
+            };
+        } catch (e) {
+            return {
+                token: false,
+                data: e
+            }
+        }
+    }
+}
+
+// const Token = require('../utils/token')
+
+module.exports = {Token}
+//code……
+ 
+
+ 
+//code……
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+// //解密
+//   //将请求头的token取出解密
+// if (data.token) {
+//     //有效token
+// }else{
+//     //无效token
+// }
+// module.exports = Token;
